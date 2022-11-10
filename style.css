@@ -116,12 +116,17 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
+    transition: 800ms;
+    -webkit-transition: 800ms;
+    -moz-transition: 800ms;
+    -ms-transition: 800ms;
+    -o-transition: 800ms;
 }
-.txt-side .Question .open{
+.txt-side .Question.open{
     font-weight: 700;
-    display: block;
+    border-bottom: none;
 }
-.txt-side .Question .open::after{
+.txt-side .Question.open::after{
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -133,7 +138,7 @@ body{
     color: var(--Dark-grayish-blue);
     width: 80%;
     font-size: 11px;
-    line-height: 15px;
+    line-height: 18px;
     overflow: hidden;
 }
 /* End text-side */
@@ -183,6 +188,9 @@ body{
     .txt-side .Question{
         width: 100%;
         font-size: 12px;
+    }
+    .txt-side .Answer{
+        width: 100%;
     }
 }
 /* End Media Query */
